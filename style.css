@@ -68,19 +68,56 @@ html, body{
 }
 
 #page2 .elem{
+    position: relative;
     height: 100%;
     width: 30%;
-    background-color: aqua;
-  
+    overflow: hidden;
+    
 }
 
 #page2 .elem img {
     height: 100%;
+    /* height: auto; */
     width: 100%;
     object-fit: cover;
-    /* scale: 1.1; */
+    scale: 1.1;
 }
 
+ .dets {
+    height: 50px;
+    border-radius: 50px;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    transform: translate(-50%, -50%);
+     z-index: 9; 
+    background-color: rgb(229, 156, 186);
+}
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.child {
+    height: 54vh;
+    width: 38vw;
+    /* background-color: red; */
+    /* border: 2px solid #000; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child img {
+    height: 100%;
+}
 
 @media (max-width:600px) {
 
