@@ -11,6 +11,28 @@
 html, body{
     height: 100%;
     width: 100%;
+    background-color: #F7F7F7;
+}
+#nav{
+     height: 100px; 
+    width: 100%;
+    background-color: burlywood;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+    }
+
+
+#cursor{ 
+height: 180px;
+    width: 180px;
+    background-color: rgba(224, 139, 189, 0.814);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
 }
 
 #page1{
